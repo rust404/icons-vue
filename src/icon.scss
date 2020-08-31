@@ -1,0 +1,25 @@
+.w-icon {
+  display: inline-flex;
+  align-items: center;
+  width: 1em;
+  height: 1em;
+
+  svg {
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+  }
+
+  &[spin] {
+    animation: spin 1000ms infinite linear;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0)
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
